@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Show</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="format-detection" content="address=no">
+  <!--    <script src="js/main.js"></script>-->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/scripts.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,400,400i,700,700i,900,900i&amp;subset=cyrillic" rel="stylesheet">
+  <!--  <link rel="stylesheet" type="text/css" href="libs/slick-carousel/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="libs/slick-carousel/slick-theme.css"/>
+  -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="wrapper">
+      <div class="logo">
+        <img src="img/test2_white.png" alt="logo" class="logo__img">
+      </div>
+      <div class="adm_links">
+        <!--<a href="templs/sorry.html" class="login">Войти</a>-->
+        <a href="#" class="login">Войти</a>
+      </div>
+    </div>
+  </header>
+  <section class="intro">
+    <div class="wrapper">
+      <h2 class="introduction">Большой текст</h2>
+    </div>
+  </section>
+  <main>
+    <div class="wrapper">
+      <div class="items">
+        <div class="item">
+          <a href="#" class="work">
+            <img src="images/example.jpg" class="work__img"></img>
+            <p class="work__description">Здесь будет текст</p>
+          </a>
+        </div>
+        <div class="item">
+          <a href="#" class="work">
+            <img src="images/example.jpg" class="work__img"></img>
+            <p class="work__description">Здесь будет текст</p>
+          </a>
+        </div>
+        <div class="item">
+          <a href="#" class="work">
+            <img src="images/example.jpg" class="work__img"></img>
+            <p class="work__description">Здесь будет текст</p>
+          </a>
+        </div>
+        <div class="item">
+          <a href="#" class="work">
+            <img src="images/example.jpg" class="work__img"></img>
+            <p class="work__description">Здесь будет текст</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+  <section class="contacts">
+    <div class="wrapper">
+      <h2 class="caption">Оставить отзыв</h2>
+      <form action="./php/sendFeedback.php" method="post" class="feedback">
+        <div class="feedback__input-block">
+          <input type="text" name="fio" id="feedback__name" class="feedback__dataset feedback__name" required>
+          <label for="feedback__name" class="feedback__lbl feedback__lbl-name">Имя</label>
+        </div>
+        <div class="feedback__input-block half-width">
+          <input type="text" name="email" id="feedback__email" class="feedback__dataset feedback__email">
+          <label for="feedback__email" class="feedback__lbl feedback__lbl-email">Адрес эл. почты</label>
+        </div>
+        <div class="feedback__input-block half-width">
+          <input type="text" name="site" id="feedback__website" class="feedback__dataset feedback__website">
+          <label for="feedback__website" class="feedback__lbl feedback__lbl-website">Web-сайт</label>
+        </div>
+        <div class="feedback__input-block">
+          <textarea name="comment" id="feedback__comments" class="feedback__dataset feedback__comments"></textarea>
+          <label for="feedback__comments" class="feedback__lbl feedback__lbl-comments">Комментарии</label>
+        </div>
+        <input type="submit" name="submitFeedback" class="feedback__submit" value="Отправить">
+      </form>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="wrapper">
+    </div>
+  </footer>
+  <div id="overlay">
+    <form action="#" id="signIn">
+      <button class="btnclose">
+        <span class="btnclose__symb">X</span>
+      </button>
+      <fieldset class="dataIn">
+        <div class="dataIn__field-area">
+          <label for="fname" class="dataIn__lbl">Имя</label>
+          <input type="text" class="dataIn__input-field" id="fname" placeholder="Введите имя">
+        </div>
+        <div class="dataIn__field-area">
+          <label for="fpass" class="dataIn__lbl">Пароль</label>
+          <input type="password" class="dataIn__input-field" id="fpass" placeholder="Введите пароль">
+        </div>
+      </fieldset>
+      <div class="service">
+        <span class="service__check-remember">
+          <input type="checkbox" name="remember" class="service__remember" id="service__remember">
+          <label for="service__remember" class="service__lbl-remember">Запомнить меня</label>
+        </span>
+        <input type="submit" name="enter" value="Вход" class="btn-submit">
+      </div>
+    </form>
+  </div>
+</body>
+</html>
